@@ -1,0 +1,78 @@
+<!--
+  Generated template for the EditpacientePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>editpaciente</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="caja">
+
+    <ion-list inset>
+      <ion-item>
+        <ion-label floating>Nombres</ion-label>
+        <ion-input type="text" [(ngModel)]="pacienteData.nombre"  ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Apellidos</ion-label>
+        <ion-input type="text" [(ngModel)]="pacienteData.apellidos"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label >Fecha de Nacimiento</ion-label>
+        <ion-input type="date" [(ngModel)]="pacienteData.fecha"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label >CI</ion-label>
+        <ion-input type="numeric" [(ngModel)]="pacienteData.ci"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label floating>Telefono</ion-label>
+        <ion-input type="tel" [(ngModel)]="pacienteData.telefono"></ion-input>
+      </ion-item>
+
+      <ion-item class="seleccion">
+        <ion-label>Sexo</ion-label>
+        <ion-select [(ngModel)]="pacienteData.sexo">
+          <ion-option value="femenino">Femenino</ion-option>
+          <ion-option value="masculino">Masculino</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Domicilio</ion-label>
+        <ion-input type="text" [(ngModel)]="pacienteData.domicilio"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Correo Electronico</ion-label>
+        <ion-input type="text" [(ngModel)]="pacienteData.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Profesion/Actividad</ion-label>
+        <ion-input type="text" [(ngModel)]="pacienteData.profesion"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Antecedentes</ion-label>
+        <ion-input type="text" [(ngModel)]="pacienteData.antecedentes"></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <button ion-button  block (click)="updatePaciente(pacienteData.id);">Actualizar Datos</button>
+
+  </div>
+
+</ion-content>

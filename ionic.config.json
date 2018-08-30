@@ -1,0 +1,14 @@
+{
+  "name": "sistema",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "e6e43cd4",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://127.0.0.1:8000/api/"
+}
+]
+}

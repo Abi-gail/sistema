@@ -1,0 +1,38 @@
+<!-- Generated template for the AccordionComponent component -->
+<ion-card>
+  <ion-card-header (click)="toggleAccordion()">
+    <ion-icon name="ios-arrow-down-outline"></ion-icon>
+      DATOS MEDICOS
+  </ion-card-header>
+  <ion-card-content #cc>
+    <ion-list no-lines>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-label>
+              <ion-checkbox color="primary"></ion-checkbox> Embarazada
+            </ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-label>
+              <ion-checkbox color="primary"></ion-checkbox> Fumador(a):
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-item>
+        <ion-label floating>Alergias: </ion-label>
+        <ion-textarea name="dummyText" [(ngModel)]="dummyText" autosize></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Alergias: </ion-label>
+        <ion-textarea name="dummyText" [(ngModel)]="dummyText" autosize></ion-textarea>
+      </ion-item>
+      <ion-item>
+
+      </ion-item>
+
+
+    </ion-list>
+  </ion-card-content>
+</ion-card>

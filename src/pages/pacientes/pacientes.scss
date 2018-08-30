@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+
+page-pacientes {
+
+  .plus{
+    position: fixed;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    color:  #EBEBEB;
+    background: #59C3C3;
+    border-radius: 50%;
+    border: none;
+    transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+    &:after{
+      content: "+";
+      font-size: 2.5em;
+      line-height: 1.1em;
+    }
+    &:hover{
+      transform: rotate(45deg);
+      box-shadow: 0 0 1px 15px rgba( #59C3C3, 0.4),
+      0 0 1px 30px rgba( #59C3C3, 0.1),
+      0 0 1px 45px rgba( #59C3C3, 0.1);
+    }
+  }
+  .caja{
+    height: 90%;
+  }
+  .card{
+    position: relative;
+    .datos{
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 250px;
+      p{
+        font-weight: 500;
+        font-size: 14px;
+      }
+      span{
+        font-weight: 100;
+        font-size: 12px;
+      }
+    }
+    .icon{
+      position: absolute;
+      font-size: 30px;
+      right: 16px;
+      top: 22px;
+      button{
+        background: transparent!important;
+      }
+    }
+  }
+
+
+}

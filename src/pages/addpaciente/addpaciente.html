@@ -1,0 +1,87 @@
+<!--
+  Generated template for the AddpacientePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Adicionar nuevo Paciente</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!--<ion-card>
+    <ion-card-content>
+      <button ion-button color="danger"  block (click)="takePicture();">
+        Tomar Foto
+      </button>
+    </ion-card-content>
+  </ion-card>-->
+  <div class="caja">
+
+    <ion-list inset>
+      <ion-item>
+        <ion-label floating>Nombres</ion-label>
+        <ion-input type="text" [(ngModel)]="userData.nombre"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Apellidos</ion-label>
+        <ion-input type="text" [(ngModel)]="userData.apellidos"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label >Fecha de Nacimiento</ion-label>
+        <ion-input type="date" [(ngModel)]="userData.fecha"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label >CI</ion-label>
+        <ion-input type="date" [(ngModel)]="userData.ci"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label floating>Telefono</ion-label>
+        <ion-input type="tel" [(ngModel)]="userData.telefono"></ion-input>
+      </ion-item>
+
+      <ion-item class="seleccion">
+        <ion-label>Sexo</ion-label>
+        <ion-select [(ngModel)]="userData.sexo">
+          <ion-option value="femenino">Femenino</ion-option>
+          <ion-option value="masculino">Masculino</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Domicilio</ion-label>
+        <ion-input type="text" [(ngModel)]="userData.domicilio"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Correo Electronico</ion-label>
+        <ion-input type="text" [(ngModel)]="userData.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Profesion/Actividad</ion-label>
+        <ion-input type="text" [(ngModel)]="userData.profesion"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Antecedentes</ion-label>
+        <ion-input type="text" [(ngModel)]="userData.antecedentes"></ion-input>
+      </ion-item>
+
+      <button ion-button full (click)="openCamera()">Tomar foto</button>
+
+    </ion-list>
+    <button ion-button  block (click)="savePaciente();">Guardar</button>
+
+  </div>
+
+</ion-content>
